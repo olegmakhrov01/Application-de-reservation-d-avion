@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Premiere version</string>
+    <string name="creer_compte">Creer compte</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="creer_son_compte">Creer son compte</string>
+    <string name="date_de_naissance">date de naissance</string>
+    <string name="email">email</string>
+    <string name="mot_de_passe">mot de passe</string>
+    <string name="nom">nom</string>
+    <string name="prenom">prenom</string>
+    <string name="aller_page_acceuil">Aller page Acceuil</string>
+    <string name="creer_un_compte">Creer un compte</string>
+    <string name="Se_connecter">Se connecter</string>
+    <string name="Email">email</string>
+    <string name="Mot_de_passe">mot de passe</string>
+    <string name="se_deconnecter">Se deconnecter</string>
+    <string name="supprimer_mon_compte">Supprimer mon compte</string>
+    <string name="cr_er_un_compte">Créer un compte</string>
+    <string name="confirmer_le_mot_de_passe">Confirmer le mot de passe</string>
+    <string name="choisir_siege">Choisir un siège</string>
+    <string name="moyen_paiement">Moyen de paiement</string>
+    <string name="vider_l_historique" />
+    <string-array name="modes_paiement">
+        <item>PayPal</item>
+        <item>Visa</item>
+        <item>Mastercard</item>
+    </string-array>
+</resources>
+
+

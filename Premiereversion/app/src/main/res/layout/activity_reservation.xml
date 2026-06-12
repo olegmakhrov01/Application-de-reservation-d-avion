@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textReservationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Détails du vol"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textPlacesRestantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Places restantes :"
+            android:paddingBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSiege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/choisir_siege"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/spinnerPaiement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/modes_paiement"
+            android:prompt="@string/moyen_paiement"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnConfirmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payer"
+            android:backgroundTint="#001F54"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnAnnuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F44336"
+            android:text="Annuler" />
+    </LinearLayout>
+</ScrollView>

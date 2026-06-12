@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_accueil"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/menu_recherche"
+        android:title="Recherche" />
+    <item
+        android:id="@+id/menu_mes_vols"
+        android:title="Mes Vols" />
+    <item
+        android:id="@+id/menu_notifications"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/menu_compte"
+        android:title="Détails de compte" />
+</menu>

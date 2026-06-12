@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9FC"
+    android:padding="24dp">
+
+    <!-- HEADER FLYNOW -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_flynow"
+            android:contentDescription="Logo FlyNow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLYNOW"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@id/logoImage"
+            app:layout_constraintTop_toTopOf="@id/logoImage"
+            app:layout_constraintBottom_toBottomOf="@id/logoImage"
+            android:layout_marginStart="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- TITRE -->
+    <TextView
+        android:id="@+id/inscriptionTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- SOUS-TITRE -->
+    <TextView
+        android:id="@+id/sousTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue ! Créons votre compte pour commencer."
+        android:textSize="14sp"
+        android:textColor="#777777"
+        app:layout_constraintTop_toBottomOf="@id/inscriptionTitre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- CHAMPS PRÉNOM & NOM -->
+    <EditText
+        android:id="@+id/inputPrenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Prénom"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        app:layout_constraintEnd_toStartOf="@+id/inputNom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sousTitre"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputNom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Nom de famille"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputPrenom"
+        app:layout_constraintTop_toTopOf="@+id/inputPrenom"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- EMAIL -->
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPrenom"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- MOT DE PASSE -->
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- CONFIRMATION -->
+    <EditText
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:hint="@string/confirmer_le_mot_de_passe"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
+
+    <!-- BOUTON CRÉER COMPTE -->
+    <Button
+        android:id="@+id/btnCreerCompte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cr_er_un_compte"
+        android:backgroundTint="#001F54"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- LIEN CONNEXION -->
+    <TextView
+        android:id="@+id/texteConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vous avez déjà un compte ? "
+        android:textSize="14sp"
+        android:textColor="#888888"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreerCompte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lienConnexion"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/lienConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:text="Connectez-vous"
+        android:textColor="#FF4081"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/texteConnexion"
+        app:layout_constraintTop_toTopOf="@id/texteConnexion"
+        app:layout_constraintBottom_toBottomOf="@id/texteConnexion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
